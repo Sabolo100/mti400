@@ -1,0 +1,20 @@
+{
+  "source_pdf": "mti-400.pdf",
+  "source_pdf_sha256": "489fccc949f685f08758d5e5c884f2f2d5d675bb507ce3f55f8b3583089afdf7",
+  "pages": 483,
+  "records": 220,
+  "people_candidates": 311,
+  "category_counts": {
+    "Kuka": 97,
+    "Utasítás": 49,
+    "Parancs": 14,
+    "Manipuláció": 17,
+    "Fake news": 7,
+    "Hárítás": 6,
+    "Elutasítva": 12,
+    "Késleltetve": 1,
+    "Cenzúra": 7,
+    "Nulla": 10
+  },
+  "review_queue_count": 62
+}
