@@ -120,8 +120,13 @@ function App() {
         <button className={view === "archive" ? "active" : ""} onClick={() => setView("archive")}>Esettár</button>
         <button className={view === "timeline" ? "active" : ""} onClick={() => setView("timeline")}>Idővonal</button>
       </nav>
-      <span className="source-badge">Forrás · mti-400.pdf</span>
+      <a className="source-badge" href="https://mtva.hu/wp-content/uploads/sites/17/2026/08/mti-400.pdf" target="_blank" rel="noreferrer">Eredeti PDF ↗</a>
     </header>
+
+    <div className="provenance-bar">
+      <p><span>Forrás és szerzőség</span><strong>Az anyag a PRO DOMO Munkacsoport munkája</strong></p>
+      <a href="https://mtva.hu/wp-content/uploads/sites/17/2026/08/mti-400.pdf" target="_blank" rel="noreferrer"><span>PDF</span>Eredeti forrásanyag megnyitása <b>↗</b></a>
+    </div>
 
     <main>
       <section className="hero-new">
@@ -180,7 +185,7 @@ function App() {
       </section>
     </main>
 
-    <footer><div className="brand footer-brand"><span className="brand-mark"><i /><i /><i /></span><span>Narancs <em>csíkos</em></span></div><p>Dokumentumalapú, kereshető archívum · A forrásban szereplő állítások szerkesztetlenül jelennek meg.</p><a href="#top" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Vissza az elejére ↑</a></footer>
+    <footer><div className="brand footer-brand"><span className="brand-mark"><i /><i /><i /></span><span>Narancs <em>csíkos</em></span></div><p>Dokumentumalapú, kereshető archívum · A forrásban szereplő állítások szerkesztetlenül jelennek meg.</p><p className="design-credit">Design by <strong>OpenAI Sol 5.6</strong> &amp; <strong>Budaházy Szabolcs</strong></p><a href="#top" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Vissza az elejére ↑</a></footer>
 
     {selected && <IncidentModal item={selected} onClose={() => setSelected(null)} />}
   </div>;
